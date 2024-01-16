@@ -7,6 +7,7 @@
   height: 80px;
 
   background-color: var(--white);
+  z-index: 99;
 }
 
 .dark .site-header {
@@ -238,7 +239,7 @@
   .haeder__nav--mobile .header__burger-btn {
     display: none;
   }
-  
+
   .haeder__nav--mobile .header__clouse-btn {
     position: absolute;
     top: 20px;
