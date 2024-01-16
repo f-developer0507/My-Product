@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>My Product</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
         alt="preloader-img.gif"
         width="64"
         height="64"
-        >
+      />
     </div>
 
     <!-- Site Header start -->
@@ -54,7 +54,7 @@
           <div class="intro-row">
             <div class="intro__content">
               <h2 class="intro__title">
-                Work at the speed <br>
+                Work at the speed <br />
                 of thought
               </h2>
               <p class="intro__text">
@@ -67,12 +67,26 @@
                   <a class="btn-wrapper__btn" href="#!">Get started</a>
                 </li>
                 <li>
-                  <a class="btn-wrapper__btn" href="#!"><img src="./images/intro/play-icon.svg" alt="intro/play-icon.svg" width="17" height="19">Watch the Video</a>
+                  <a class="btn-wrapper__btn" href="#!"
+                    ><img
+                      src="./images/intro/play-icon.svg"
+                      alt="intro/play-icon.svg"
+                      width="17"
+                      height="19"
+                    />Watch the Video</a
+                  >
                 </li>
               </ul>
             </div>
             <div class="intro__img">
-                <img src="./images/intro/inrto-img.png" srcset="./images/intro/inrto-img.png 1x, ./images/intro/inrto-img@2x.png 2x" alt="inrto-img.png">
+              <img
+                src="./images/intro/inrto-img.png"
+                srcset="
+                  ./images/intro/inrto-img.png    1x,
+                  ./images/intro/inrto-img@2x.png 2x
+                "
+                alt="inrto-img.png"
+              />
             </div>
           </div>
         </div>
@@ -83,7 +97,98 @@
     <!-- Footer start -->
     <footer class="site-footer">
       <div class="container">
-        <div class="footer-row"></div>
+        <div class="footer-row">
+          <div class="footer__logo-wrapper">
+            <a href="./index.html" class="footer__logo"></a>
+            <ul class="footer__social-icons social-icons-list">
+              <li class="social-icons-list__item">
+                <a href="#!" class="social-icons-list__link">
+                  <img
+                    src="./images/footer/instagram.svg"
+                    alt="instagram.svg"
+                    width="24"
+                    height="25"
+                  />
+                </a>
+              </li>
+              <li class="social-icons-list__item">
+                <a href="#!" class="social-icons-list__link">
+                  <img
+                    src="./images/footer/facebook.svg"
+                    alt="facebook.svg"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+              <li class="social-icons-list__item">
+                <a href="#!" class="social-icons-list__link">
+                  <img
+                    src="./images/footer/twitter.svg"
+                    alt="twitter.svg"
+                    width="24"
+                    height="20"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__list-wrapper list-wrapper">
+            <div class="list-wrapper__row">
+              <strong class="list-wrapper__badge">Resource</strong>
+              <ul class="list-wrapper__list">
+                <li class="list-wrapper__item">
+                  <a href="#!" class="list-wrapper__link">About Us</a>
+                </li>
+                <li class="list-wrapper__item">
+                  <a href="#!" class="list-wrapper__link">Blog</a>
+                </li>
+                <li class="list-wrapper__item">
+                  <a href="#!" class="list-wrapper__link">Contact</a>
+                </li>
+                <li class="list-wrapper__item">
+                  <a href="#!" class="list-wrapper__link">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="list-wrapper__row">
+              <strong class="list-wrapper__badge">Legal Stuff</strong>
+              <ul class="list-wrapper__list">
+                <li class="list-wrapper__item">
+                  <a href="#!" class="list-wrapper__link">Disclaimer</a>
+                </li>
+                <li class="list-wrapper__item">
+                  <a href="#!" class="list-wrapper__link">Financing</a>
+                </li>
+                <li class="list-wrapper__item">
+                  <a href="#!" class="list-wrapper__link">Privacy Policy</a>
+                </li>
+                <li class="list-wrapper__item">
+                  <a href="#!" class="list-wrapper__link">Terms of Service</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__form-wrapper form-wrapper">
+            <form
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <strong class="form-wrapper__badge"
+                >knowing you're always on <br />
+                the best energy deal.</strong
+              >
+              <input type="email" name="user-email" required autocomplete="off">
+              <button type="submit" class="form-wrapper__btn">
+                Sign up Now
+              </button>
+            </form>
+          </div>
+          <p class="footer__text">Made With Love By Figmaland All Right Reserved</p>
+        </div>
       </div>
     </footer>
     <!-- Footer end -->

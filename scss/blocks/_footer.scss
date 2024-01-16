@@ -1,6 +1,165 @@
 .site-footer {
+  position: relative;
+
   margin-top: auto;
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+}
+
+.dark .site-footer {
+  color: var(--text-white);
+}
+
+.dark .site-footer strong {
+  color: var(--text-white);
+}
+
+.dark .site-footer a {
+  color: var(--text-white);
 }
 
 .footer-row {
+  @include display($ai: flex-start);
+}
+
+.footer__logo-wrapper {
+  margin-right: 160px;
+
+  @include display($fd: column);
+  row-gap: 25px;
+}
+
+.footer__logo {
+  display: inline-block;
+
+  width: 163px;
+  height: 30px;
+  background-image: url(../images/footer/footer-logo.svg);
+
+  transition: opacity 0.3s ease-in;
+
+  &:hover {
+    opacity: 80%;
+  }
+  &:active {
+    opacity: 75%;
+  }
+}
+
+.dark .footer__logo {
+  background-image: url(../images/footer/footer-logo-white.svg);
+}
+
+.social-icons-list {
+  @include display();
+  column-gap: 15px;
+}
+
+.social-icons-list__item {
+  width: 40px;
+  height: 40px;
+  @include display($jc: center);
+
+  background-color: #edfffc;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    transform: translateY(-3px);
+    opacity: 80%;
+  }
+}
+
+.social-icons-list__link {
+  width: 100%;
+  height: 100%;
+
+  @include display($jc: center);
+}
+
+.list-wrapper {
+  width: 378px;
+  margin-right: 82px;
+
+  @include display($jc: space-between);
+}
+
+.list-wrapper__badge {
+  margin-bottom: 8px;
+
+  display: inline-block;
+
+  @include textStyle($fs: 20px, $fw: 500, $lh: 30px);
+}
+
+.list-wrapper__list {
+  @include display($fd: column, $ai: start);
+}
+
+.list-wrapper__link {
+  @include textStyle($lh: 35px);
+
+  &:hover {
+    font-weight: 500;
+    color: var(--accent);
+  }
+}
+
+.form-wrapper {
+  width: 325px;
+  @include display($fd: column);
+}
+
+.form-wrapper__badge {
+  margin-bottom: 35px;
+
+  display: inline-block;
+
+  @include textStyle($fs: 20px, $fw: 500, $lh: 30px);
+}
+
+.form-wrapper input {
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+  width: 325px;
+  height: 48px;
+
+  background: #fff;
+  color: var(--text-color);
+  border: 1px solid #bcd0e5;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+
+  &:focus {
+    border-color: var(--accent);
+  }
+}
+
+.dark .form-wrapper input {
+  color: var(--accent);
+}
+
+.form-wrapper__btn {
+  @include btn($padding: 8px, $width: 131px, $height: 40px, $fw: 700);
+}
+
+.dark .form-wrapper__btn {
+  &:hover {
+    color: var(--text-white);
+  }
+}
+
+.footer__text {
+  position: absolute;
+  text-align: center;
+  right: 50%;
+  transform: translateX(45%);
+  bottom: 0;
+
+  @include textStyle($lh: 30px);
+}
+
+.dark .footer__text {
+  color: var(--text-white);
 }
