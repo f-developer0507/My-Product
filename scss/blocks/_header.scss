@@ -1,6 +1,16 @@
 .site-header {
-  margin-bottom: 25px;
   padding: 20px 0px;
+  position: fixed;
+  top: -1px;
+
+  width: 100%;
+  height: 80px;
+
+  background-color: var(--white);
+}
+
+.dark .site-header {
+  background-color: var(--dark);
 }
 
 .header-row {
@@ -170,6 +180,18 @@
 
 // tablet
 @media (max-width: 950px) {
+  .site-header {
+    margin-bottom: 30px;
+    padding: 17px 0px;
+
+    background: #fff;
+    box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .dark .site-header {
+    box-shadow: 0px -2px 8px 0px rgba(255, 255, 255, 0.25);
+  }
+
   .haeder__list {
     display: none;
   }
@@ -200,6 +222,7 @@
     row-gap: 30px;
 
     background-color: var(--dark);
+    z-index: 5;
   }
 
   .dark .haeder__nav--mobile {
@@ -215,7 +238,7 @@
   .haeder__nav--mobile .header__burger-btn {
     display: none;
   }
-
+  
   .haeder__nav--mobile .header__clouse-btn {
     position: absolute;
     top: 20px;
