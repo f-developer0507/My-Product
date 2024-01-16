@@ -5,6 +5,18 @@ html {
 body {
   min-height: 100vh;
 
-  @include display($fd: column, $jc: unset, $ai: unset);
-  // font-family: ;
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--poppins-font);
+}
+
+.dark {
+  background-color: var(--dark);
+
+  color: var(--text-white);
+}
+
+.dark a {
+  color: var(--text-white);
 }

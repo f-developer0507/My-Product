@@ -1,6 +1,32 @@
 :root {
   --container-width: 1200px;
   --container-padding: 20px;
+
+  --accent: #02897a;
+  --text-color: #22343d;
+  --text-white: #fff;
+  --border-color: #bcd0e5;
+  --white: #fff;
+  --dark: #1f2e35;
+
+  --poppins-font: "Poppins", sans-serif;
+  --inter-font: "Inter", sans-serif;
+  --montserrat-font: "Montserrat", sans-serif;
+}
+
+@mixin textStyle(
+  $ff: var(--poppins-font),
+  $fs: 16px,
+  $fw: 400,
+  $lh: 28px,
+  $color: var(--text-color)
+) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+
+  color: $color;
 }
 
 @mixin display($fd: row, $jc: start, $ai: center) {
@@ -8,4 +34,44 @@
   flex-direction: $fd;
   justify-content: $jc;
   align-items: $ai;
+}
+
+@mixin btn(
+  $padding: 10px 0px,
+  $width: 110px,
+  $height: 43px,
+  $fs: 16px,
+  $fw: 600,
+  $bg: var(--accent),
+  $color: var(--text-white),
+  $hover-color: var(--text-color),
+  $borer: 1px solid transparent,
+  $hover-borer-color: var(--border-color)
+) {
+  padding: $padding;
+
+  width: $width;
+  height: $height;
+
+  @include display($jc: center);
+
+  font-size: $fs;
+  font-weight: $fw;
+
+  background-color: $bg;
+  color: $color;
+  border-radius: 4px;
+  border: $borer;
+
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    background-color: transparent;
+    color: $hover-color;
+    border-color: $hover-borer-color;
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
 }
