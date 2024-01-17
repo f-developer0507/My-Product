@@ -4,6 +4,7 @@
 
 .management-row {
   @include display($jc: space-between, $ai: start);
+  column-gap: 10px;
 }
 
 .management-wrapper {
@@ -66,6 +67,7 @@
 
   .management-row {
     @include display($fd: column-reverse, $jc: center, $ai: center);
+    column-gap: unset;
   }
 
   .management-wrapper__content {
