@@ -72,6 +72,7 @@
 
   .management-wrapper__content {
     @include display($fd: column, $ai: start);
+    text-align: left;
   }
 
   .management__img {

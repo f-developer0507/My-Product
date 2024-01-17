@@ -1366,6 +1366,7 @@ template {
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    text-align: left;
   }
   .management__img {
     margin-bottom: 50px;
