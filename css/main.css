@@ -1272,6 +1272,7 @@ template {
   }
 }
 .management {
+  overflow-x: hidden;
   margin-bottom: 150px;
 }
 
@@ -1395,6 +1396,7 @@ template {
   }
 }
 .customer {
+  overflow-x: hidden;
   margin-bottom: 150px;
 }
 
