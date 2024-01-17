@@ -14,6 +14,10 @@
   --montserrat-font: "Montserrat", sans-serif;
 }
 
+.none {
+  display: none !important;
+}
+
 @mixin textStyle(
   $ff: var(--poppins-font),
   $fs: 16px,
