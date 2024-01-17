@@ -51,6 +51,10 @@
 
 .product__item__img {
   margin-bottom: 30px;
+
+  & > img {
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
+  }
 }
 
 .product__item__title {
