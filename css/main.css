@@ -545,7 +545,8 @@ template {
   padding: 20px 0px;
   position: fixed;
   top: -1px;
-  width: 100%;
+  right: 0;
+  left: 0;
   height: 80px;
   background-color: var(--white);
   z-index: 99;
@@ -766,7 +767,6 @@ template {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
     width: 250px;
     height: 100%;
     display: flex;
