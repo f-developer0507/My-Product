@@ -554,7 +554,7 @@ template {
   left: 0;
   height: 80px;
   background-color: var(--white);
-  z-index: 99;
+  z-index: 10;
 }
 
 .dark .site-header {

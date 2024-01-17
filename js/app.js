@@ -2,6 +2,9 @@
 const preloader = document.querySelector(".preloader-wrapper");
 window.onload = function () {
   preloader.classList.add("preloader-hidden");
+  setInterval(function () {
+    preloader.classList.add("preloader-hidden");
+  }, 990);
 };
 
 // preloader js end
