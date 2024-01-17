@@ -59,7 +59,7 @@
   column-gap: 178px;
 }
 
-.process__list__row {
+.process-list-row {
   width: 100%;
 
   @include display($jc: center, $fd: column);
@@ -148,14 +148,14 @@
   .process {
     margin-bottom: 100px;
   }
-  
+
   .process__list {
     margin-bottom: 32px;
 
     @include display($jc: space-between, $fd: column);
   }
 
-  .process__list__row:nth-child(2) {
+  .process-list-row:nth-child(2) {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
@@ -163,4 +163,3 @@
     align-items: center;
   }
 }
-
