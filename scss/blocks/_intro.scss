@@ -51,7 +51,6 @@
 }
 
 .intro__btn-wrapper li:nth-child(2) .btn-wrapper__btn {
-
   @include display($jc: space-between, $ai: center);
 
   width: 160px;
@@ -119,6 +118,10 @@
 
 // mobile
 @media (max-width: 390px) {
+  .intro-section {
+    margin-top: 110px;
+    margin-bottom: 100px;
+  }
   .intro__img {
     margin-bottom: 10px;
 

@@ -1,0 +1,124 @@
+.product {
+  margin-bottom: 150px;
+  padding-bottom: 90px;
+
+  height: 540px;
+
+  background-image: url(../images/product/product-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.dark .product {
+  background-image: url(../images/product/product-bg-dark.svg);
+}
+
+.product-row {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0px 20px;
+  @include display($fd: column, $jc: center);
+}
+
+.product__content {
+  margin-bottom: 66px;
+  max-width: 520px;
+  text-align: center;
+}
+
+.product__title {
+  @include textStyle($fs: 32px, $fw: 700, $lh: unset);
+}
+
+.dark .product__title {
+  color: var(--text-white);
+}
+
+.product__list {
+  margin-bottom: 35px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 45px;
+}
+
+.product__item__content {
+  @include display($fd: column);
+  text-align: center;
+}
+
+.product__item__img {
+  margin-bottom: 30px;
+}
+
+.product__item__title {
+  margin-bottom: 13px;
+
+  @include textStyle($fs: 22px, $fw: 600, $lh: unset);
+}
+
+.dark .product__item__title,
+.dark .product__item__text {
+  color: var(--text-white);
+}
+
+.product__item__text {
+  @include textStyle($lh: 26px);
+}
+
+.product__btn {
+  @include btn($padding: 15px 0px, $width: 175px, $height: 53px, $fw: 700);
+}
+
+.dark .product__btn {
+  &:hover {
+    color: var(--text-white);
+  }
+}
+
+// tablet
+@media (max-width: 950px) {
+  .product {
+    margin-bottom: 100px;
+
+    height: auto;
+  }
+
+  .product__content {
+    margin-bottom: 50px;
+    max-width: auto;
+  }
+
+  .product__list {
+    margin-bottom: 35px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+  }
+
+  .product__item__content {
+    @include display($fd: column);
+    text-align: center;
+  }
+}
+
+// mobile
+@media (max-width: 490px) {
+  .product {
+    padding-bottom: 40px;
+
+    height: auto;
+  }
+
+  .product__list {
+    margin-bottom: 35px;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 32px;
+    justify-content: center;
+  }
+}
