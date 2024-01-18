@@ -179,6 +179,10 @@
 .price__btn {
   @include btn($padding: 11px 0px, $width: 140px, $height: 44px);
 
+  font-family: var(--montserrat-font);
+  font-size: 18px;
+  font-weight: 600;
+
   transition: all 0.3s ease-in;
 
   &:hover {

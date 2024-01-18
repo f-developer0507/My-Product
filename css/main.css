@@ -2239,6 +2239,9 @@ template {
   border-radius: 4px;
   border: 1px solid transparent;
   transition: all 0.3s ease-in;
+  font-family: var(--montserrat-font);
+  font-size: 18px;
+  font-weight: 600;
   transition: all 0.3s ease-in;
 }
 .price__btn:hover {
